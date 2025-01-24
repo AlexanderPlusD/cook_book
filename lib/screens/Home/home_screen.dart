@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:namer_app/screens/animation/AnimationScreen.dart';
+import 'package:namer_app/screens/effects/EffecScreen.dart';
+import 'package:namer_app/screens/networking/NetworkingScreen.dart';
+import 'package:namer_app/screens/persistence/persistence_screen.dart';
 import '../Design/DesignScreen.dart';
 import '../form/formScreen.dart';
 import '../images/ImagesScreen.dart';
@@ -174,5 +178,25 @@ final List<Section> _sections = [
     title: 'First App',
     icon: Icons.create,
     screen: const MyApp(),
+  ),
+  Section(
+    title: 'Persistence',
+    icon: Icons.storage,
+    screen: const PersistenceScreen(),
+  ),
+  Section(
+    title: 'Networking',
+    icon: Icons.network_check,
+    screen: const NetworkingScreen(),
+  ),
+  Section(
+    title: 'Effects',
+    icon: Icons.accessible_forward_sharp,
+    screen: const EffectsScreen(),
+  ),
+  Section(
+    title: 'Animations',
+    icon: Icons.countertops_outlined,
+    screen: const AnimationScreen(),
   ),
 ];
